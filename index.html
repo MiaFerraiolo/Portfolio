@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="https://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+<title>Mia Ferraiolo's Portfolio</title>
+    
+    <link rel="shortcut icon" href="assets/favicon-square.png"/>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700"/>
+    <link rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Unna:400i,700,700i"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+</head>
+ 
+<body>
+
+<div class="navigation">
+    <a class="name accent-bold-italic" href="index.html">Mia Ferraiolo</a>
+    <div class="navbar">
+        <a href="index.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div> 
+</div>
+
+<div class="content index" id="content">
+    <div class="image-header">
+        <div class="bg-style"></div>
+        <div class="page-title">
+            <div class="page-title-type">Graphics</div>
+            <span class="accent-bold">Portfolio</span>
+        </div>
+    </div>
+    <div class="intro-wrapper">
+        <table class="intro">
+            <td class="intro-text">
+                <div class="bio">
+                    <div class="bio-title accent-bold">
+                        Mia Ferraiolo
+                    </div><br>
+                        Mia Ferraiolo recently graduated from the University of St Andrews. In 2019, they joined Pulse Infoframe to refresh the company website and branched into marketing and graphic design. They are dedicated to creating clean websites and infographics to smoothly communicate information. 
+                </div>
+            </td>
+            <td>
+                <div class="portrait">
+                    <img src="assets/palm.png">
+                </div>
+            </td>
+            <td class="intro-text">
+                <div class="bio">
+                    <div class="bio-title accent-bold">
+                        Expertise
+                    </div>
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fa fa-li fa-check-square"></i>Graphic Design
+                        </li>
+                        <li>
+                            <i class="fa fa-li fa-check-square"></i>UI/UX and Website Design
+                        </li>
+                        <li>
+                            <i class="fa fa-li fa-check-square"></i>Copywriting and Editing
+                        </li>
+                        <li>
+                            <i class="fa fa-li fa-check-square"></i>HTML, CSS, Javascript, Adobe, Office
+                        </li>
+                    </ul>
+                </div>
+            </td>
+        </table>
+    </div>
+
+    <div class="grid-wrapper">
+        <div class="grid graphics">
+            <div class="grid-item" onclick="openLightbox();toSlide(1)">
+                <img src="assets/data standards.png" />
+            </div>
+            <div class="grid-item" onclick="openLightbox();toSlide(2)">
+                <img src="assets/platform.png" />
+            </div>
+            <div class="grid-item" onclick="openLightbox();toSlide(3)">
+                <img src="assets/rtrwd.png" />
+            </div>
+            <div class="grid-item" onclick="openLightbox();toSlide(4)">
+                <img src="assets/standardization.png" />
+            </div>
+            <div class="grid-item" onclick="openLightbox();toSlide(5)">
+                <img src="assets/data entry.png" />
+            </div>
+            <div class="grid-item squares">
+                <table>
+                    <tr>
+                        <td><img src="assets/diamond-white.png" /></td>
+                        <td><img src="assets/timeline-white.png" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="grid-item squares">
+                <table>
+                    <tr>
+                        <td><img src="assets/globe-white.png" /></td>
+                        <td><img src="assets/microscope-white.png" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="grid-item squares">
+                <table>
+                    <tr>
+                        <td><img src="assets/whitemap2.png" /></td>
+                        <td><img src="assets/whitemap4.png" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="callout">        
+        <div class="h2 accent-italic">
+            Want to learn more?
+        </div>
+        <p>
+            <a href="mailto:mjferraiolo@gmail.com" class="resume" target="_blank">
+                Send me an email
+            </a>
+            <a href="assets/resume.pdf" class="resume" target="_blank">
+                View my resume
+            </a>
+        </p>
+    </div>
+</div>
+
+<div id="Lightbox" class="modal">
+    <span class="close pointer" onclick="closeLightbox()">&times;</span>
+        <div class="slide">
+            <img src="assets/data standards.png" class="image-slide" />
+        </div>
+        <div class="slide">
+            <img src="assets/platform.png" class="image-slide transparent" />
+        </div>
+        <div class="slide">
+            <img src="assets/rtrwd.png" class="image-slide" />
+        </div>
+        <div class="slide">
+            <img src="assets/standardization.png" class="image-slide" />
+        </div>
+        <div class="slide">
+            <img src="assets/data entry.png" class="image-slide" />
+        </div>
+    <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<footer>
+    <div class="name accent-bold-italic">Mia Ferraiolo</div>
+    mjferraiolo@gmail.com &nbsp; &mdash; &nbsp; (978) 844 2496
+</footer>
+
+
+</body></html>
