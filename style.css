@@ -593,12 +593,16 @@ table.intro td:nth-of-type(2) {
     background:#3C532B;}
 
 @media only screen and (max-width: 950px) {
-    
     .contact-tiles tr:nth-of-type(1) td {
     padding-top:70px;}
     .contact-tiles td {
 	display:block;
 	margin:20px auto;}
+}
+
+@media only screen and (max-width: 950px) {
+	.contact-tiles {
+    max-width:200px;}
 }
 
 footer {
