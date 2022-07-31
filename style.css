@@ -536,6 +536,11 @@ table.intro td:nth-of-type(2) {
     color:#3C532B;
     background:transparent;}
 
+@media only screen and (max-width: 400px) {
+    a.resume {
+    margin:10px 5px;}
+}
+
 .contact-tiles {
     position:relative;
     z-index:95;
